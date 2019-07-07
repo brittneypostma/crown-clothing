@@ -93,7 +93,9 @@ class SignUp extends React.Component {
             label='Confirm Password'
             required
           />
+          <div className="sign-up-button">
           <CustomButton type='submit'>SIGN UP</CustomButton>
+          </div>
         </form>
       </div>
     );

@@ -1,14 +1,23 @@
 .sign-in {
-  width: 380px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-items: center;
 
   .title {
     margin: 10px 0;
   }
 
   .buttons {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .sign-in {
+    justify-self: flex-start;
+    width: 100%;
   }
 }
