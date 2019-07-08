@@ -1,5 +1,6 @@
 .checkout-page {
-  width: 55%;
+  width: 100%;
+  padding: 0 0 0 25px;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
   .checkout-header {
     width: 100%;
     padding: 10px 0;
+    margin: 5px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
@@ -27,5 +29,11 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: (611px)) {
+  .checkout-header {
+    font-size: 0.9rem;
   }
 }
